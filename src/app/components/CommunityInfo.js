@@ -13,6 +13,14 @@ export default function CommunityInfo() {
     fetchMessage();
   }, []);
 
+  if (!data) {
+    return (
+      <div className="text-center text-gray-500 text-lg mt-10">
+        Loading community info...
+      </div>
+    );
+  }
+
   return (
     <div className="text-center mb-6">
       <h1 className="text-4xl font-bold text-gray-800 mb-4">{data.name}</h1>

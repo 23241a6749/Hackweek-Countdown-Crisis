@@ -4,10 +4,9 @@ import CommunityInfo from './components/CommunityInfo';
 
 export default function HomePage() {
   return (
-    <main style={{ backgroundColor: typeof window !== 'undefined' ? '#f0f0f0' : '#f0f0f1', padding: '20px', borderRadius: '10px'}}>
+    <main className="bg-[#f0f0f0] p-5 rounded-lg min-h-screen flex flex-col items-center justify-center">
       <CommunityInfo />
       <Countdown />
     </main>
   );
 }
-
